@@ -9,6 +9,11 @@
 <body>
     <div class="wrapper">
         <section class="welcome">
+            <div class="welcome__circle">
+                <img src="./img/welcome/circle.png" alt="image circle" class="welcome__circle-pic">
+            </div>
+            <img src="./img/welcome/legs.png" alt="image legs" class="welcome__legs">
+            <img src="./img/welcome/tablets.png" alt="image tablets" class="welcome__tablets">
             <div class="welcome__container container">
                 <header class="header">
                     <div class="header__logo logo">
@@ -81,12 +86,24 @@
                         </div>
                         <div class="welcome__order">
                             <div class="welcome__order-layout">
+                                <div class="welcome__order__arrow welcome__order__arrow-img">
+                                    <svg class="welcome__order__arrow-pic">
+                                        <use xlink:href="./img/svg/form/arrow.svg#arrow"></use>
+                                    </svg>
+                                </div>
                                 <div class="welcome__order__free">
-                                    <div class="welcome__order__free-icon"></div>
-                                    <span class="welcome__order__free-text">Бесплатно</span>
+                                    <div class="welcome__order__free-content">
+                                        <div class="welcome__order__free-img">
+                                            <svg class="welcome__order__free-pic">
+                                                <use xlink:href="./img/svg/form/car.svg#car"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="welcome__order__free-text">Бесплатно</span>
+                                    </div>
+                                    <div class="welcome__order__free-whitespace"></div>
                                 </div>
                                 <div class="welcome__order__title">
-                                    <span class="welcome__order__title-text">Успейте заказать со скидкой</span>
+                                    <span class="welcome__order__title-text">Успейте заказать<br> со скидкой</span>
                                     <span class="welcome__order__title-date">до 10.09.2018</span>
                                 </div>
                                 <div class="welcome__order__prices">
@@ -101,20 +118,62 @@
                                 </div>
                                 <form class="form">
                                     <label class="form__label">
-                                        <input type="text" class="form__input" placeholder="Имя" name="name" maxlength="20">
+                                        <div class="form__img form__img-user">
+                                            <svg class="form__pic">
+                                                <use xlink:href="./img/svg/form/user.svg#user"></use>
+                                            </svg>
+                                        </div>
+                                        <input type="text" class="form__input" placeholder="Имя" name="name" maxlength="20" required>
                                     </label>
                                     <label class="form__label">
-                                        <input type="text" class="form__input" placeholder="Телефон" name="phone">
+                                        <div class="form__img form__img-phone">
+                                            <svg class="form__pic">
+                                                <use xlink:href="./img/svg/form/phone.svg#phone"></use>
+                                            </svg>
+                                        </div>
+                                        <input type="text" class="form__input" placeholder="Телефон" name="phone" required>
                                     </label>                                    
                                     <button class="form__button" type="submit">
                                         <span class="form__button-title">Заказать</span>
                                         <span class="form__button-subtitle">со скидкой</span>
                                     </button>
                                 </form>
+                                <div class="welcome__order__left">
+                                    <span class="welcome__order__left-text">Осталось <span class="welcome__order__left-text--color-green">10</span> упаковок <br>со скидкой</span>
+                                </div>
+                                
+                            </div>
+                            <div class="welcome__order__secured">
+                                <div class="welcome__order__secured-img">
+                                    <svg class="welcome__order__secured-pic">
+                                        <use xlink:href="./img/svg/form/shield.svg#shield"></use>
+                                    </svg>
+                                </div>
+                                <div class="welcome__order__secured-text">Ваши данные защищены!</div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="maincontent">
+            <div class="maincontent__container container">
+                <div class="maincontent__logo logo">
+                    <a href="#" class="logo-img">
+                        <svg class="logo-pic">
+                            <use xlink:href="./img/svg/LOGO.svg#LOGO"></use>
+                        </svg>
+                    </a>
+                </div>
+                <h2 class="maincontent__title">
+                    <span class="maincontent__title__caption-big">Грибок - это опасная инфекция</span>
+                    <span class="maincontent__title__caption-small">которая угрожает вам и вашим близким, ведь с каждым днем грбок приводит к:</span>
+                </h2>
+                <ul class="maincontent__list">
+                    <li class="maincontent__item">
+                        
+                    </li>
+                </ul>
             </div>
         </section>
     </div>

@@ -1,0 +1,6 @@
+bash.exe.stackdump
+node_modules
+.DS_Store
+.vscode
+.idea
+*.log

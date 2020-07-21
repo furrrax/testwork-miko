@@ -336,8 +336,7 @@ a {
   background-color: #fff;
   width: 100%;
   height: 100%;
-  position: relative;
-  z-index: -10; }
+  position: relative; }
 
 @media screen and (max-width: 1000px) {
   html {
@@ -346,12 +345,42 @@ a {
   html {
     font-size: 0.8125rem; } }
 
+.wrapper {
+  background-image: url("../img/welcome/bg-low.jpg");
+  background-repeat: no-repeat;
+  background-position: top; }
+
 .container {
   max-width: 1170px;
   margin: 0 auto; }
 
 .welcome {
-  padding-top: 0.9375rem; }
+  padding-top: 0.9375rem;
+  position: relative;
+  z-index: 5; }
+  .welcome__circle {
+    position: absolute;
+    top: 18%;
+    right: 60%;
+    z-index: -20; }
+    .welcome__circle-pic {
+      width: 35.625rem;
+      height: 35.625rem;
+      position: relative; }
+  .welcome__legs {
+    position: absolute;
+    width: 47.6875rem;
+    height: 37.4375rem;
+    top: 0;
+    right: 58%;
+    z-index: -15; }
+  .welcome__tablets {
+    position: absolute;
+    width: 43.625rem;
+    height: 25.5rem;
+    top: 65%;
+    right: 52%;
+    z-index: -10; }
 
 .logo-img {
   width: 5rem;
@@ -479,7 +508,8 @@ a {
   margin-left: 1.25rem; }
 
 .underline-orange, .underline-green {
-  position: relative; }
+  position: relative;
+  z-index: 5; }
   .underline-orange:after, .underline-green:after {
     content: '';
     position: absolute;
@@ -498,3 +528,260 @@ a {
   border-bottom: 3px solid #ff6b00; }
 .welcome__text .underline-green:after {
   border-bottom: 3px solid #a7c93d; }
+
+.welcome__order {
+  border: 7px solid #a8ca3f;
+  border-radius: 0.9375rem;
+  margin-left: 2.1875rem;
+  background-color: #fff; }
+  .welcome__order-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+    position: relative; }
+  .welcome__order__arrow {
+    position: absolute; }
+    .welcome__order__arrow-img {
+      width: 3rem;
+      height: 14.5rem;
+      fill: #fd7532;
+      right: -38px;
+      top: 201px; }
+    .welcome__order__arrow-pic {
+      width: 100%;
+      height: 100%; }
+  .welcome__order__free {
+    margin-top: -0.4375rem;
+    padding-left: 0.6875rem;
+    padding-right: 0.6875rem;
+    padding-bottom: 0.8125rem;
+    border: 7px solid #a8ca3f;
+    border-bottom-left-radius: 0.9375rem;
+    border-bottom-right-radius: 0.9375rem;
+    background-color: #fff;
+    position: relative;
+    z-index: 0; }
+    .welcome__order__free-content {
+      display: flex;
+      margin-top: -0.3125rem;
+      z-index: 5; }
+    .welcome__order__free-whitespace {
+      width: 100%;
+      height: 10px;
+      background-color: #f3f9ff;
+      position: absolute;
+      bottom: 88%;
+      left: 0;
+      z-index: -1; }
+    .welcome__order__free-img {
+      width: 1.6875rem;
+      height: 0.9375rem;
+      fill: #fd7532; }
+    .welcome__order__free-pic {
+      width: 100%;
+      height: 100%; }
+    .welcome__order__free-text {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1rem;
+      color: #444444;
+      margin-left: 0.5625rem; }
+  .welcome__order__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25rem; }
+    .welcome__order__title-text {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.25rem;
+      color: #000000;
+      text-align: center; }
+    .welcome__order__title-date {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 1.25rem;
+      color: #ff6b00; }
+  .welcome__order__prices {
+    margin-top: 1.375rem;
+    display: flex; }
+    .welcome__order__prices__old, .welcome__order__prices__new {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .welcome__order__prices__old-text, .welcome__order__prices__new-text {
+        margin-bottom: 0.9375rem; }
+    .welcome__order__prices__old {
+      margin-right: 3.75rem; }
+      .welcome__order__prices__old-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 0.875rem;
+        color: #666666; }
+      .welcome__order__prices__old-price {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 2.125rem;
+        color: #0b0b0b;
+        position: relative; }
+        .welcome__order__prices__old-price:before {
+          content: "";
+          border-bottom: 2px solid #ec885b;
+          position: absolute;
+          width: 120%;
+          height: 50%;
+          transform: rotate(-9deg);
+          left: -14px;
+          transform-origin: 50% 0; }
+        .welcome__order__prices__old-price:after {
+          content: "";
+          border-bottom: 2px solid #ec885b;
+          position: absolute;
+          width: 120%;
+          height: 50%;
+          transform: rotate(10deg);
+          left: -7px;
+          transform-origin: 50% 0; }
+    .welcome__order__prices__new-text {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 0.875rem;
+      color: #000000; }
+    .welcome__order__prices__new-price {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 2.125rem;
+      color: #000000;
+      position: relative;
+      z-index: 5; }
+      .welcome__order__prices__new-price:after {
+        position: absolute;
+        content: '';
+        width: 125%;
+        height: 117%;
+        background-color: #ffbf02;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        border-radius: 0.25rem; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.9375rem; }
+  .form__label {
+    position: relative;
+    margin-bottom: 0.625rem; }
+    .form__label:last-child {
+      margin-bottom: 0.9375rem; }
+  .form__img {
+    position: absolute;
+    top: 50%;
+    left: 1.3125rem;
+    fill: #e87846;
+    transform: translateY(-50%); }
+    .form__img-user {
+      width: 1.1875rem;
+      height: 1.4375rem; }
+    .form__img-phone {
+      width: 1.3125rem;
+      height: 1.5rem; }
+  .form__pic {
+    width: 100%;
+    height: 100%; }
+  .form__input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #666666;
+    padding: 1.5625rem 3.4375rem 1.6875rem;
+    border-color: transparent;
+    border-radius: 3.125rem;
+    background-color: #eef2f7;
+    outline: none; }
+  .form__button {
+    position: relative;
+    border-radius: 3.125rem;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem 0;
+    border: none;
+    background-color: #ffc002; }
+    .form__button-title, .form__button-subtitle {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      color: #000; }
+    .form__button-title {
+      font-size: 1.75rem; }
+    .form__button-subtitle {
+      font-size: 1rem; }
+    .form__button:after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 81%;
+      width: 95%;
+      background-color: none;
+      border-radius: 3.125rem;
+      border: 2px solid #ffd24e; }
+
+.welcome__order__left {
+  margin-top: 1.3125rem;
+  text-align: center; }
+  .welcome__order__left-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+    font-size: 1.125rem; }
+    .welcome__order__left-text--color-green {
+      color: #9dbd39;
+      font-weight: 500; }
+.welcome__order__secured {
+  margin-top: 1rem;
+  padding: 0.8125rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef2f7;
+  width: 100%;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; }
+  .welcome__order__secured-img {
+    width: 1.1875rem;
+    height: 1.25rem;
+    fill: #e87846;
+    margin-right: 0.75rem; }
+  .welcome__order__secured-pic {
+    width: 100%;
+    height: 100%; }
+  .welcome__order__secured-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #666666;
+    font-size: 0.875rem; }
+
+.maincontent {
+  padding-top: 11.875rem; }
+  .maincontent__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
