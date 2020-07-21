@@ -2,6 +2,7 @@
     background-image: url('../img/welcome/bg-low.jpg');
     background-repeat: no-repeat;
     background-position: top;
+    margin-bottom: rem(30px);
 }
 
 .container {
@@ -10,9 +11,9 @@
 }
 
 .welcome {
-    padding-top: rem(15px);
     position: relative;
     z-index: 5;
+    padding-top: rem(15px);
 
     &__circle {
         position: absolute;
@@ -489,6 +490,7 @@
         padding: rem(12px) 0;
         border: none;
         background-color: #ffc002;
+        cursor: pointer;
         &-title, &-subtitle {
             font-family: 'Roboto', sans-serif;
             font-weight: 900;
@@ -570,5 +572,147 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: rem(20px);
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        &__caption-big {
+            font-weight: 900;
+            font-size: rem(48px);
+            color: #383334;
+            margin-bottom: rem(35px);
+        }
+        &__caption-small {
+            font-weight: 700;
+            font-size: rem(24px);
+            color: #2b2828;
+        }
+    }
+
+    &__list {
+        margin-top: rem(52px);
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-right: rem(57px);
+        &:last-child {
+            margin-right: 0;
+        }
+        &__desc {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #444444;
+            font-size: rem(18px);
+            max-width: rem(315px);
+            line-height: rem(25px);
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                width: rem(50px);
+                height: rem(3px);
+                background-color: #becbd8;
+                left: 0;
+                bottom: 128%;
+            }
+        }
+    }
+    &__picture {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(57px);
+        position: relative;
+
+        &__svg {
+            position: absolute;
+            left: rem(-18px);
+            top: rem(-18px);
+            z-index: 5;
+            &-pic {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #fff;
+                font-size: rem(30px);
+            }
+        }
+        
+        &-img {
+            position: relative;
+            width: rem(170px);
+            height: rem(170px);
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            margin-right: rem(19px);
+            
+        }
+        &-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            &--finger {
+                position: absolute;
+                bottom: 10px;
+                right: 34px;
+                transform: scale(1.4);
+            }
+        }
+        &-text {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: #000;
+            font-size: rem(22px);
+        }
+    }
+}
+
+.footer {
+    position: relative;
+    margin-top: rem(75px);
+    width: 100%;
+    border: 3px solid #f4d3bb;
+    border-radius: rem(6px);
+    padding-top: rem(45px);
+    padding-bottom: rem(40px);
+    text-align: center;
+
+    &__caption {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: rem(22px);
+        color: #444444;
+        &>strong {
+            font-weight: 500;
+            color: #000;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        left: 50%;
+        bottom: 86%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        padding: 0 rem(50px);
+        &-img {
+            width: rem(55px);
+            height: rem(37px);
+        }
+        &-pic {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
