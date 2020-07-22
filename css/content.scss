@@ -13,16 +13,16 @@
 .welcome {
     position: relative;
     z-index: 5;
-    padding-top: rem(15px);
+    padding-top: rem(13px);
 
     &__circle {
         position: absolute;
-        top: 18%;
-        right: 60%;
+        top: 15%;
+        right: 56%;
         z-index: -20;
         &-pic {
-            width: rem(570px);
-            height: rem(570px);
+            width: rem(628px);
+            height: rem(690px);
             position: relative;
         }
     }
@@ -31,15 +31,15 @@
         width: rem(763px);
         height: rem(599px);
         top: 0;
-        right: 58%;
+        right: 54%;
         z-index: -15;
     }
     &__tablets {
         position: absolute;
         width: rem(698px);
         height: rem(408px);
-        top: 65%;
-        right: 52%;
+        top: 70%;
+        right: 49%;
         z-index: -10;
     }
 }
@@ -58,7 +58,7 @@
 .header {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: rem(60px);
+    padding-right: rem(25px);
 
     &__logo {
         display: flex;
@@ -70,21 +70,20 @@
             font-size: rem(22px);
             color: #383334;
             margin-left: rem(16px);
+            margin-bottom: 8px;
         }
     }
 
     &__advantages {
         display: flex;
         align-items: center;
+        margin-left: rem(88px);
         &-item {
             display: flex;
             align-items: center;
             margin-left: rem(40px);
             &:first-child {
-                margin-left: rem(90px);
-            }
-            &:last-child {
-                margin-right: rem(25px);
+                margin-left: 0;
             }
         }
         &__img {
@@ -112,7 +111,7 @@
             font-style: italic;
             font-size: rem(16px);
             color: #666666;
-            margin-left: rem(15px);
+            margin-left: rem(10px);
         }
     }
 }
@@ -122,9 +121,11 @@
     &__content {
         display: flex;
         justify-content: flex-end;
+        margin-top: rem(48px);
         &-text {
             display: flex;
             flex-direction: column;
+            margin-right: rem(30px);
         }
         &-inner {
             display: flex;
@@ -135,12 +136,12 @@
     &__title {
         font-family: 'Roboto', sans-serif;
         color: #383334;
-        margin-bottom: rem(45px);
         max-width: rem(308px);
         &-main {
             font-weight: 900;
             font-style: normal;
             font-size: rem(46px);
+            line-height: rem(43px);
         }
         &-sub {
             font-weight: bold;
@@ -151,6 +152,7 @@
 
     &__description {
         position: relative;
+        margin-top: rem(39px);
         &__arrow-pic {
             width: 100%;
             height: 100%;
@@ -169,7 +171,7 @@
     &__item {
         display: flex;
         align-items: center;
-        margin-bottom: rem(52px);
+        margin-bottom: rem(34px);
         &:last-child {
             margin-bottom: 0;
         }
@@ -210,6 +212,16 @@
     &__text {
         max-width: rem(290px);
         margin-left: rem(20px);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: rem(20px);
+        color: #444444;
+        line-height: rem(24px);
+        &>strong {
+            font-weight: 500;
+            color: #000;
+        }
     }
 }
 
@@ -255,8 +267,7 @@
 
 .welcome__order {
     border: 7px solid #a8ca3f;
-    border-radius: rem(15px);
-    margin-left: rem(35px);
+    border-radius: rem(15px);;
     background-color: #fff;
 
     &-layout {
@@ -274,8 +285,8 @@
             width: rem(48px);
             height: rem(232px);
             fill: #fd7532;
-            right: -38px;
-            top: 201px;
+            right: -32px;
+            top:161px;
         }
         &-pic {
             width: 100%;
@@ -286,7 +297,7 @@
         margin-top: rem(-7px);
         padding-left: rem(11px);
         padding-right: rem(11px);
-        padding-bottom: rem(13px);
+        padding-bottom: rem(9px);
         border: 7px solid #a8ca3f;
         border-bottom-left-radius: rem(15px);
         border-bottom-right-radius: rem(15px);
@@ -331,7 +342,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: rem(20px);
+        margin-top: rem(14px);
         &-text {
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
@@ -350,18 +361,18 @@
     }
 
     &__prices {
-        margin-top: rem(22px);
+        margin-top: rem(11px);
         display: flex;
         &__old, &__new {
             display: flex;
             flex-direction: column;
             text-align: center;
             &-text {
-                margin-bottom: rem(15px);
+                margin-bottom: rem(8px);
             }
         }
         &__old {
-            margin-right:rem(60px);
+            margin-right:rem(23px);
             &-text {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
@@ -420,8 +431,8 @@
                 &:after {
                     position: absolute;
                     content: '';
-                    width: 125%;
-                    height: 117%;
+                    width: 116%;
+                    height: 104%;
                     background-color: #ffbf02;
                     top: 50%;
                     left: 50%;
@@ -437,13 +448,17 @@
 .form {
     display: flex;
     flex-direction: column;
-    margin-top: rem(15px);
+    margin-top: rem(14px);
 
     &__label {
         position: relative;
-        margin-bottom: rem(10px);
-        &:last-child {
-            margin-bottom: rem(15px);
+        height: rem(64px);
+        border-color: transparent;
+        border-radius: rem(50px);
+        background-color: #eef2f7;
+        width: rem(222px);
+        &-user {
+            margin-bottom: rem(11px);
         }
     }
 
@@ -468,14 +483,17 @@
     }
 
     &__input {
+        position: absolute;
+        max-width: rem(140px);
+        top: 50%;
+        left: 23%;
+        transform: translateY(-50%);
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: rem(16px);
         color: #666666;
-        padding: rem(25px) rem(55px) rem(27px);
-        border-color: transparent;
-        border-radius: rem(50px);
+        border: transparent;
         background-color: #eef2f7;
         outline: none;
     }
@@ -491,6 +509,7 @@
         border: none;
         background-color: #ffc002;
         cursor: pointer;
+        margin-top: 15px;
         &-title, &-subtitle {
             font-family: 'Roboto', sans-serif;
             font-weight: 900;
@@ -502,6 +521,7 @@
         }
         &-subtitle {
             font-size: rem(16px);
+            margin-top: -3px;
         }
         &:after {
             position: absolute;
@@ -520,7 +540,7 @@
 
 .welcome__order {
     &__left {
-        margin-top: rem(21px);
+        margin-top: rem(17px);
         text-align: center;
         &-text {
             font-family: 'Roboto', sans-serif;
@@ -536,7 +556,7 @@
     }
 
     &__secured {
-        margin-top: rem(16px);
+        margin-top: rem(12px);
         padding: rem(13px) 0;
         display: flex;
         align-items: center;
@@ -565,7 +585,7 @@
 }
 
 .maincontent {
-    padding-top: rem(190px);
+    padding-top: rem(194px);
 
     &__container {
         display: flex;
@@ -573,35 +593,40 @@
         align-items: center;
     }
 
+    &__logo-img {
+        width: rem(92px);
+        height: rem(65px);
+    }
+
     &__title {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: rem(20px);
+        margin-top: rem(9px);
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         &__caption-big {
             font-weight: 900;
             font-size: rem(48px);
             color: #383334;
-            margin-bottom: rem(35px);
         }
         &__caption-small {
             font-weight: 700;
             font-size: rem(24px);
             color: #2b2828;
+            margin-top: rem(33px);
         }
     }
 
     &__list {
-        margin-top: rem(52px);
+        margin-top: rem(45px);
         display: flex;
-        justify-content: flex-start;
+        align-self: flex-start;
     }
     &__item {
         display: flex;
         flex-direction: column;
-        margin-right: rem(57px);
+        margin-right: rem(81px);
         &:last-child {
             margin-right: 0;
         }
@@ -612,8 +637,9 @@
             color: #444444;
             font-size: rem(18px);
             max-width: rem(315px);
-            line-height: rem(25px);
+            line-height: rem(27px);
             position: relative;
+            margin-top: rem(51px);
             &:before {
                 position: absolute;
                 content: '';
@@ -621,14 +647,13 @@
                 height: rem(3px);
                 background-color: #becbd8;
                 left: 0;
-                bottom: 128%;
+                bottom: 119%;
             }
         }
     }
     &__picture {
         display: flex;
         align-items: center;
-        margin-bottom: rem(57px);
         position: relative;
 
         &__svg {
@@ -652,7 +677,7 @@
             border-radius: 50%;
             overflow: hidden;
             flex-shrink: 0;
-            margin-right: rem(19px);
+            margin-right: rem(17px);
             
         }
         &-pic {
@@ -672,18 +697,19 @@
             font-style: normal;
             color: #000;
             font-size: rem(22px);
+            margin-top: 13px;
         }
     }
 }
 
 .footer {
     position: relative;
-    margin-top: rem(75px);
+    margin-top: rem(71px);
     width: 100%;
     border: 3px solid #f4d3bb;
     border-radius: rem(6px);
-    padding-top: rem(45px);
-    padding-bottom: rem(40px);
+    padding-top: rem(41px);
+    padding-bottom: rem(36px);
     text-align: center;
 
     &__caption {
@@ -692,6 +718,7 @@
         font-style: normal;
         font-size: rem(22px);
         color: #444444;
+        line-height: 27px;
         &>strong {
             font-weight: 500;
             color: #000;
@@ -704,7 +731,7 @@
         bottom: 86%;
         transform: translateX(-50%);
         background-color: #fff;
-        padding: 0 rem(50px);
+        padding: 0 rem(58px);
         &-img {
             width: rem(55px);
             height: rem(37px);
