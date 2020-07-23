@@ -226,7 +226,7 @@
                 height: rem(146px);
             }
             @include phones {
-                top: 29%;
+                top: 24%;
             }
         }
         &__arrow-pic {
@@ -384,6 +384,7 @@
             margin-top: rem(-5px);
             z-index: 5;
         }
+        
         &-whitespace {
             width: 100%;
             height: rem(10px);
@@ -401,7 +402,6 @@
             @include phones {
                 bottom: 100%;
             }
-
         }
 
         &-img {
