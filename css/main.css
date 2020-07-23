@@ -667,7 +667,7 @@ a {
           background-color: #fff; } }
       @media screen and (max-width: 400px) {
         .welcome__order__free-whitespace {
-          bottom: 97%; } }
+          bottom: 100%; } }
     .welcome__order__free-img {
       width: 1.6875rem;
       height: 0.9375rem;
