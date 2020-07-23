@@ -213,7 +213,7 @@
             width: rem(9px);
             height: rem(146px);
             fill: #aec3da;
-            top: 25%;
+            top: rem(75px);
             left: rem(25px);
             @include tablets {
                 top: 29%;
@@ -221,12 +221,9 @@
                 height: 146px;
             }
             @include phones-big {
-                top: 24%;
+                top: rem(75px);
                 width: rem(9px);
                 height: rem(146px);
-            }
-            @include phones {
-                top: 24%;
             }
         }
         &__arrow-pic {
@@ -387,7 +384,7 @@
         
         &-whitespace {
             width: 100%;
-            height: rem(10px);
+            height: rem(15px);
             background-color: #f3f9ff;
             position: absolute;
             bottom: 88%;
@@ -400,7 +397,7 @@
                 background-color: #fff;
             }
             @include phones {
-                bottom: 100%;
+                bottom: 101%;
             }
         }
 
